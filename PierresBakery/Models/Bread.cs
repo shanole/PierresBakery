@@ -9,7 +9,8 @@ namespace PierresBakery.Models
     }
     public int CalculatePrice()
     {
-      return 5;
+      int price = 5 * BreadOrders;
+      return price;
     }
   }
 }
