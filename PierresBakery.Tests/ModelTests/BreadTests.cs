@@ -28,5 +28,13 @@ namespace PierresBakery.Tests
      int price = testBread.CalculatePrice();
      Assert.AreEqual(5,price);
    }
+   [TestMethod]
+   public void CalculatePrice_ReturnsPriceOfTwoBreads_10()
+   {
+     int order = 2;
+      Bread testBread = new Bread(order);
+     int price = testBread.CalculatePrice();
+     Assert.AreEqual(10,price);
+   }
   }
 }
