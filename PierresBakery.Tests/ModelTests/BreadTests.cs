@@ -17,7 +17,16 @@ namespace PierresBakery.Tests
    {
      int orders = 2;
      Bread testBread = new Bread(orders);
-     Assert.AreEqual(orders,Bread.BreadOrders);
+     int result = Bread.BreadOrders;
+     Assert.AreEqual(orders,result);
+   }
+   [TestMethod]
+   public void CalculatePrice_ReturnsPriceOfOneBread_5()
+   {
+     int order = 1;
+     Bread testBread = new Bread(order);
+     int price = testBread.CalculatePrice();
+     Assert.AreEqual(5,price);
    }
   }
 }
