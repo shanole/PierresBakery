@@ -7,5 +7,9 @@ namespace PierresBakery.Models
     {
       PastryOrders = orders;
     }
+    public int CalculatePrice()
+    {
+      return 0;
+    }
   }
 }
