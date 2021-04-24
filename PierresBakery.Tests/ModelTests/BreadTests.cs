@@ -17,7 +17,7 @@ namespace PierresBakery.Tests
    {
      int orders = 2;
      Bread testBread = new Bread(orders);
-     int result = Bread.BreadOrders;
+     int result = testBread.BreadOrders;
      Assert.AreEqual(orders,result);
    }
    [TestMethod]

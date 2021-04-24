@@ -4,7 +4,7 @@ namespace PierresBakery.Models
 {
   public class Bread
   {
-    public static int BreadOrders {get; set;}
+    public int BreadOrders { get; set;}
     public Bread(int orders)
     {
       BreadOrders = orders;
@@ -19,7 +19,6 @@ namespace PierresBakery.Models
       else if (BreadOrders > 3)
       {
         int notBonus = BreadOrders % 3;
-        Console.WriteLine(notBonus);
         price = price - 5*(BreadOrders-notBonus)/3;
       }
       return price;
