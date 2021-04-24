@@ -10,6 +10,10 @@ namespace PierresBakery.Models
     public int CalculatePrice()
     {
       int price = 5 * BreadOrders;
+      if (BreadOrders == 3)
+      {
+        price -= 5;
+      }
       return price;
     }
   }
