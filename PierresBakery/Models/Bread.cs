@@ -1,3 +1,5 @@
+using System;
+
 namespace PierresBakery.Models
 {
   public class Bread
@@ -13,6 +15,12 @@ namespace PierresBakery.Models
       if (BreadOrders % 3 == 0)
       {
         price -= 5*BreadOrders/3;
+      }
+      else if (BreadOrders > 3)
+      {
+        int notBonus = BreadOrders % 3;
+        Console.WriteLine(notBonus);
+        price = price - 5*(BreadOrders-notBonus)/3;
       }
       return price;
     }
