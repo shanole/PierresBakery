@@ -9,7 +9,7 @@ namespace PierresBakery.Models
     }
     public int CalculatePrice()
     {
-      return 0;
+      return 2;
     }
   }
 }
