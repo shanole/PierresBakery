@@ -16,7 +16,7 @@ namespace PierresBakery.Models
       }
       else
       {
-        price = PastryOrders * 2;
+        price = ((PastryOrders - PastryOrders%3)/3)*5 + ((PastryOrders%3)*2);
       }
       return price;
     }
